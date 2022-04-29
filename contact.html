@@ -97,7 +97,8 @@
           </div>
           <div class="right">
             <div class="form-wrapper">
-              <form class="" action="mail.php" method="POST">
+              <!-- <form class="" action="mail.php" method="POST" data-netlify="true"> -->
+              <form class="" method="POST" data-netlify="true">
                 <div class="form-group">
                   <label for="name">Your name</label>
                   <div class="input-wrapper">
@@ -115,6 +116,10 @@
                 <div class="form-group">
                   <label for="message">Message</label>
                   <textarea type="text" name="message" id="message" width='100%'></textarea>
+                </div>
+                <div class="field">
+                  <div class="" data-netlify-recaptcha="true">            
+                  </div>
                 </div>
                 <button type="submit" name="button">Send</button>
               </form>
